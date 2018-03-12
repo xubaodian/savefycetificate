@@ -7,4 +7,4 @@
 3、主页（home.vue）从store中读取带权限路由信息，并渲染到页面上。
 
 从login.vue登录，并获取到用户权限（登录验证），然后跳转到home.vue（主页），主页动态获取权限路由。
-项目地址(https://github.com/xubaodian/savefycetificate.git)
+
