@@ -1,12 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/Login'
-import Admin from '@/components/Admin'
-import Home from '@/components/Home'
-import Guest from '@/components/Guest'
-import Super from '@/components/SuperManager'
 
 import store from '../store'
 
