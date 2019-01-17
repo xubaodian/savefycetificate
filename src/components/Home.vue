@@ -31,8 +31,7 @@ export default {
   },
   methods:{
     getRouter(arr) {
-      console.log(this.$store);
-      let role = this.$store.getters.getRoles;
+      let role = sessionStorage.getItem('roles') || this.$store.getters.getRoles;
       this.routeList = [];
       arr.map(item => {
         if (item.meta.indexOf(role) > -1) {

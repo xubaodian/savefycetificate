@@ -24,11 +24,13 @@ export default {
         this.$store.commit('addRoles', {
           roles: 'admin'
         });
+        sessionStorage.setItem('roles', 'admin');
         this.$router.push('/home');
       } else if (this.username === 'guest' && this.password === '123456') {
         this.$store.commit('addRoles', {
           roles: 'user'
         });
+        sessionStorage.setItem('roles', 'user');
         this.$router.push('/home');
       }
     }

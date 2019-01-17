@@ -60,7 +60,7 @@ route.beforeEach((to, from, next) => {
   if (to.path === '/login') {
     next();
   } else {
-    let role = route.app.$options.store.state.roles;
+    let role = sessionStorage.getItem('roles') || route.app.$options.store.state.roles;
     if (role === '') {
       next('/login');
     } else {
